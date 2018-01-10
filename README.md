@@ -114,6 +114,12 @@ At the MongoDB prompt, run these lines:
 mongoimport --db aprender --collection thingstolearn --type csv --headerline --file /file/path/to/the/CSV/quizwords.csv
 ```
 
+* install arrow and pymongo using pip if you haven't already
+
+`sudo pip install arrow`
+
+`sudo pip install pymongo`
+
 * run the db setup file (ONLY ONCE)
 
 `python dbsetup.py`
