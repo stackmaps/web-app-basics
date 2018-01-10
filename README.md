@@ -9,9 +9,9 @@ The purpose of this app is to teach full stack web development.  quizapp is a Fl
 
 
 IF you don't have a Github account:
-enter 
+enter
 
-`git clone https://github.com/stackmaps/web-app-basics.git` 
+`git clone https://github.com/stackmaps/web-app-basics.git`
 
 into Terminal.
 
@@ -23,7 +23,7 @@ IF you have a Github account:
 Go to https://github.com/stackmaps/web-app-basics and click the upper right button that says Fork
 
 
-`git clone https://github.com/YOUR-USERNAME/web-app-basics.git` 
+`git clone https://github.com/YOUR-USERNAME/web-app-basics.git`
 
 where you replace `YOUR-USERNAME` with your Github username
 
@@ -65,6 +65,13 @@ Here is a sample `secure.py` file.
 
 https://docs.mongodb.com/manual/administration/install-community/
 
+Follow through step 1, "Create the data directory"
+
+After that, enter these:
+
+`sudo chmod 0755 /data/db`
+
+`sudo chown $USER /data/db`
 
 Next, we need to set up the users inside MongoDB.
 
@@ -132,7 +139,7 @@ http://0.0.0.0:8080/demo
 This is just a plain HTMl page.  Can you find the files inside /templates which you need to edit in order to modify this page?  
 ##Run you Flask server on the local network:
 
-* start your flask server with this command: 
+* start your flask server with this command:
 
 `flask run --host=0.0.0.0`
 
