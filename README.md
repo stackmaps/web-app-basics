@@ -6,14 +6,31 @@ a Word Quiz flask app
 The purpose of this app is to teach full stack web development.  quizapp is a Flask application (written in Python 3) which demonstrates the use of MongoDB with pymongo.  In order to run this code on your local machine, follow these steps:
 
 * clone the repo
+
+
 IF you don't have a Github account:
-enter `git clone https://github.com/stackmaps/web-app-basics.git` into Terminal
+enter 
+
+`git clone https://github.com/stackmaps/web-app-basics.git` 
+
+into Terminal.
+
+
 If it errors, install all the software that pops up and try again
+
 
 IF you have a Github account:
 Go to https://github.com/stackmaps/web-app-basics and click the upper right button that says Fork
-`git clone https://github.com/YOUR-USERNAME/web-app-basics.git` where you replace `YOUR-USERNAME` with your Github username
+
+
+`git clone https://github.com/YOUR-USERNAME/web-app-basics.git` 
+
+where you replace `YOUR-USERNAME` with your Github username
+
+
 `cd web-app-basics`
+
+
 `git remote add upstream https://github.com/stackmaps/web-app-basics.git`
 
 * set up a virtual environment
@@ -36,10 +53,11 @@ You'll need to create a `secure.py` file in order for this app to run.
 
 Here is a sample `secure.py` file.
 
-APP_SECRET_KEY = "whoa this is a 53crEt K3Y!!!"
+    APP_SECRET_KEY = "whoa this is a 53crEt K3Y!!!"
 
-MONGO_USERNAME = "dev"
-MONGO_PASSWORD = "really secure passw0rd"
+    MONGO_USERNAME = "dev"
+
+    MONGO_PASSWORD = "really secure passw0rd"
 
 
 
@@ -49,8 +67,9 @@ Next, we need to set up the users inside MongoDB.
 
 at the prompt, run this:
 
-mongo
+    $ mongo
 
+```
 > use admin
 db.createUser(  
   {
@@ -69,7 +88,7 @@ db.createUser(
     roles: [ { role: "readWrite", db: "aprender" },]
   }
 )
-
+```
 
 * in a new terminal window, start a MongoDB instance
 
@@ -170,6 +189,7 @@ utun0: flags=000<UP,POINTOPOINT,RUNNING,MULTICAST> mtu 000 <br/>
 	inet6 000000000000000000 prefixlen 0 scopeid 00 <br/>
 	nd6 options=00<PERFORMNUD,DAD> <br/>
 (wenv)  xxxxxxx  ~/src  <br/>
+
 
 * Your friends can type this ip in their browsers, with a colon and the port number you were using before
 `yourip:sameport`
