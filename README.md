@@ -61,13 +61,22 @@ Here is a sample `secure.py` file.
 
 
 
+# Install MongoDB Community Edition
+
+https://docs.mongodb.com/manual/administration/install-community/
 
 
 Next, we need to set up the users inside MongoDB.
 
-at the prompt, run this:
+At the Terminal, run this to start a mongo instance:
+
+    $ mongod
+
+In another Terminal window, run this to start the MongoDB interactive shell:
 
     $ mongo
+
+At the MongoDB prompt, run these lines:
 
 ```
 > use admin
@@ -79,7 +88,7 @@ db.createUser(
   }
 )
 
-use aprender
+> use aprender
 
 db.createUser(
   {
@@ -90,14 +99,13 @@ db.createUser(
 )
 ```
 
-* in a new terminal window, start a MongoDB instance
-
-`mongod`
 
 * import the example data!
 (edit this command to include the proper filepath)
 
-`mongoimport --db aprender --collection thingstolearn --type csv --headerline --file /file/path/to/the/CSV/quizwords.csv`
+```
+mongoimport --db aprender --collection thingstolearn --type csv --headerline --file /file/path/to/the/CSV/quizwords.csv
+```
 
 * run the db setup file (ONLY ONCE)
 
