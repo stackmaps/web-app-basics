@@ -116,9 +116,9 @@ mongoimport --db aprender --collection thingstolearn --type csv --headerline --f
 
 * install arrow and pymongo using pip if you haven't already
 
-`pip install arrow`
+`sudo pip install arrow`
 
-`pip install pymongo`
+`sudo pip install pymongo`
 
 * run the db setup file (ONLY ONCE)
 
