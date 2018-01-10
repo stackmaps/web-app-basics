@@ -80,7 +80,7 @@ At the MongoDB prompt, run these lines:
 
 ```
 > use admin
-db.createUser(  
+> db.createUser(  
   {
     user: "admin1",
     pwd: "some other re@lly secure passw0rd",
@@ -90,7 +90,7 @@ db.createUser(
 
 > use aprender
 
-db.createUser(
+> db.createUser(
   {
     user: "dev",
     pwd: "really secure passw0rd",
